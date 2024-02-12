@@ -129,7 +129,7 @@ form .form-row .textarea {
   background: #b431bd;
   transition: background 0.4s ease;
   border-top: none;
-  border-bottom: o;
+  border-bottom: 0;
 }
 
 .submitBtn input:hover {

@@ -52,7 +52,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 35px;
-
 }
 
 form .form-row .inputData {
@@ -126,7 +125,7 @@ form .form-row .textarea {
     background: #b431bd;
     transition: background 0.4s ease;
     border-top: none;
-    border-bottom: o;
+    border-bottom: 0;
 }
 
 .submitBtn input:hover {
