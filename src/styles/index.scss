@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+}
+
+.sendSection {
+    max-width: 800px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+}
+
+.sendSection .text {
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sendSection form {
+    padding: 30px 0;
+}
+
+.sendSection form .form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+}
+
+form .form-row .inputData {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea {
+    height: 70px;
+}
+
+.inputData input,
+.textarea textarea {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 17px;
+}
+
+.inputData input {
+    border-top: 10px solid white;
+    padding: 10px 0 2px;
+    border-bottom: 3px solid #3498db;
+}
+
+.textarea textarea {
+    border-bottom: 3px solid #3498db;
+    resize: none;
+    border-top: 10px solid white;
+    padding-top: 2px;
+}
+
+.inputData label {
+    position: absolute;
+    top: -15px;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+.textarea label {
+    left: 0;
+}
+
+.commentLab {
+    height: 22px;
+}
+
+.inputData .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.submit-btn input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    max-width: 160px;
+    margin: 60px auto 0;
+    padding: 0 10px;
+    border-radius: 3px;
+    background: #b431bd;
+    transition: background 0.4s ease;
+    border-top: none;
+    border-bottom: o;
+}
+
+.submitBtn input:hover {
+    background: #01a6ae;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 10px;
+    position: absolute;
+}
+
+.status {
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .sendSection .text {
+        font-size: 30px;
+    }
+}
+
+.sendSection form {
+    padding: 10px 0 0 0;
+}
+
+.sendSection form .form-row {
+    display: block;
+}
+
+form .form-row .inputData {
+    margin: 35px 0;
+}
+
+.submitBtn .inputData {
+    width: 40%;
+}

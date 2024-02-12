@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/main.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <main>
+        <section class="sendSection">
+            <button id="openModalBtn" class="openModalBtn"><span>Modal</span></button>
+            <div class="text">
+                Contact us Form
+            </div>
+            <form id="form" novalidate action="#">
+                <div class="form-row">
+                    <section class="inputData">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" maxlength="20">
+                        <div class="underline"></div>
+                    </section>
+                    <section class="inputData">
+                        <label for="email">Ваш E-mail:</label>
+                        <input id="email" name="email" type="email" maxlength="20">
+                        <div class="underline"></div>
+                    </section>
+                    <section class="inputData">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone">
+                        <div class="underline"></div>
+                    </section>
+                    <div class="inputData textarea">
+                        <textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+                        <div class="underline"></div>
+                        <label for="comment" class="commentLab">Комментарий:</label>
+                        <div class="submitBtn">
+                            <input style="border: none" type="submit" id="sendInf"></input>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <div class="modal-overlay" id="modalOverlay">
+            <div class="modal">
+                <div class="modalBox" id="modalBox">
+                    <button id="closeModalBtn" class="closeModalBtn"><span>Close</span></button>
+                    <h2 class="status" id="status">Здесь будет отображаться приходящая информация</h2>
+                    <div class="modalContent" id="modalContent"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../dist/main.bundle.js"></script>
+    <script src='../dist/src/index.bundle.js'></script>
+
+    <script src="../dist/src/modalWindow.bundle.js"></script>
+
+</body>
+
+</html>
